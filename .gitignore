@@ -1,0 +1,4 @@
+.venv/
+*.vpp.lck
+*.vpp.bak*
+*.vpp.vbak
