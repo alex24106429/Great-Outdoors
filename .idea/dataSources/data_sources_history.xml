@@ -1,44 +1,6 @@
 <DataSourcesHistory>
-  <DataSourceFromHistory isRemovedFromProject="true">
-    <data-source source="LOCAL" name="SDM" uuid="21e74b1d-9831-4664-a586-0ee68fa50204">
-      <database-info product="SQLite" version="3.51.1" jdbc-version="4.2" driver-name="SQLite JDBC" driver-version="3.51.1.0" dbms="SQLITE" exact-version="3.51.1" exact-driver-version="3.51">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
-      <driver-ref>sqlite.xerial</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/SDM.db</jdbc-url>
-      <auth-provider>no-auth</auth-provider>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="schema" qname="@" />
-        </introspection-scope>
-      </schema-mapping>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-  </DataSourceFromHistory>
-  <DataSourceFromHistory isRemovedFromProject="true">
-    <data-source source="LOCAL" name="DWH" uuid="a4495342-b6f1-4418-983d-2b69791bd927">
-      <database-info product="SQLite" version="3.51.1" jdbc-version="4.2" driver-name="SQLite JDBC" driver-version="3.51.1.0" dbms="SQLITE" exact-version="3.51.1" exact-driver-version="3.51">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
-      <driver-ref>sqlite.xerial</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/DWH.db</jdbc-url>
-      <auth-provider>no-auth</auth-provider>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="schema" qname="@" />
-        </introspection-scope>
-      </schema-mapping>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-  </DataSourceFromHistory>
   <DataSourceFromHistory isRemovedFromProject="false">
-    <data-source source="LOCAL" name="SDM" uuid="164ba7d7-388b-4f26-82f0-2970b6b77996">
+    <data-source source="LOCAL" name="identifier.sqlite" uuid="cab6aa77-48ab-47a9-a8eb-a5a16618437d">
       <database-info product="SQLite" version="3.51.1" jdbc-version="4.2" driver-name="SQLite JDBC" driver-version="3.51.1.0" dbms="SQLITE" exact-version="3.51.1" exact-driver-version="3.51">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
@@ -46,7 +8,8 @@
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/Data/SDM.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:identifier.sqlite</jdbc-url>
+      <secret-storage>master_key</secret-storage>
       <auth-provider>no-auth</auth-provider>
       <schema-mapping>
         <introspection-scope>
@@ -56,8 +19,8 @@
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </DataSourceFromHistory>
-  <DataSourceFromHistory isRemovedFromProject="false">
-    <data-source source="LOCAL" name="DWH" uuid="0249a623-90ee-45bb-8c0c-f18caef69f47">
+  <DataSourceFromHistory isRemovedFromProject="true">
+    <data-source source="LOCAL" name="SDM" uuid="770b34e4-9b84-466a-b606-cfaa47828442">
       <database-info product="SQLite" version="3.51.1" jdbc-version="4.2" driver-name="SQLite JDBC" driver-version="3.51.1.0" dbms="SQLITE" exact-version="3.51.1" exact-driver-version="3.51">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
@@ -65,7 +28,7 @@
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/Data/DWH.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/data/SDM.db</jdbc-url>
       <auth-provider>no-auth</auth-provider>
       <schema-mapping>
         <introspection-scope>
