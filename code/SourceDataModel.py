@@ -10,13 +10,23 @@ import csv
 #    # 2. Laad de sqlite bestanden in
 
 # %%
+# BEFORE (fragile relative paths):
 db_sdm = "../data/SDM.db"
 db_crm = "../data/CRM-data.sqlite"
-db_gosales = "../data/GO_SALES-data.sqlite"
-db_gostaff = "../data/GO_STAFF-data.sqlite"
-csv_inventory = "../data/INVENTORY_LEVELS-data.csv"
-csv_forecast = "../data/PRODUCT_FORECAST-data.csv"
-csv_sales_target = "../data/SALES_TARGET-data.csv"
+# ...
+
+# AFTER (absolute paths relative to the script file):
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "..", "data")
+
+db_sdm = os.path.join(DATA_DIR, "SDM.db")
+db_crm  = os.path.join(DATA_DIR, "CRM-data.sqlite")
+db_gosales = os.path.join(DATA_DIR, "GO_SALES-data.sqlite")
+db_gostaff = os.path.join(DATA_DIR, "GO_STAFF-data.sqlite")
+csv_inventory   = os.path.join(DATA_DIR, "INVENTORY_LEVELS-data.csv")
+csv_forecast    = os.path.join(DATA_DIR, "PRODUCT_FORECAST-data.csv")
+csv_sales_target = os.path.join(DATA_DIR, "SALES_TARGET-data.csv")
 
 # Controleer of het bestand al bestaat
 db_exists = os.path.exists(db_sdm)
@@ -363,5 +373,9 @@ conn.commit()
 conn.close()
 
 print("\nProces afgerond! Het bestand 'SDM.db' is met succes gegenereerd/gevuld.")
+
+
+
+
 
 
